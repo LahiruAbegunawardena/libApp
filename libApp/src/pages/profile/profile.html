@@ -1,0 +1,74 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  Name : {{usrstr.nm}}
+  <br>
+  Username : {{usrstr.unm}}
+  <br>
+  Password : {{usrstr.pwd}}
+  <br>
+
+
+  <br>
+
+
+  <ion-grid>
+    <ion-row></ion-row>
+    <!--<ion-row></ion-row>
+    <ion-row></ion-row> -->
+
+    <ion-row>
+      <ion-col col-1></ion-col>
+
+      <ion-col col-4>
+        <button ion-button block (click)="bkView()">Available Books</button>
+      </ion-col>
+
+      <ion-col col-2></ion-col>
+
+      <!-- <ion-col col-4>
+        <button ion-button block (click)="brvView()">Borrowed books</button>
+      </ion-col> -->
+
+      <ion-col col-4>
+        <button ion-button block>Fine</button>
+      </ion-col>
+
+      <ion-col col-1></ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col col-4></ion-col>
+      <!-- <ion-col col-4>
+        <button ion-button block>Fine</button>
+      </ion-col>
+      <ion-col col-2></ion-col> -->
+      <ion-col col-4>
+        <!-- <button ion-button btn-success block></button> -->
+        <button ion-button (click)="popView()" block>logout</button>
+      </ion-col>
+      <ion-col col-4></ion-col>
+    </ion-row>
+    
+  </ion-grid>
+
+  <!-- <button ion-button [navPush]="HomePage">try logout</button> -->
+</ion-content>
